@@ -22,21 +22,21 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(playerHandle.Moving == true)
-        {
-            horizontalAxis = Input.GetAxisRaw("Horizontal") * moveSpeed;
-            animator.SetFloat("Speed",Mathf.Abs(horizontalAxis));
-        }
-        if(playerHandle.Jumping == true)
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                animator.SetBool("isJumping", true);
-                isJump = true;
+        //if(playerHandle.Moving == true)
+        //{
+        //    horizontalAxis = Input.GetAxisRaw("Horizontal") * moveSpeed;
+        //    animator.SetFloat("Speed",Mathf.Abs(horizontalAxis));
+        //}
+        //if(playerHandle.Jumping == true)
+        //{
+        //    if (Input.GetKeyDown(KeyCode.Space))
+        //    {
+        //        animator.SetBool("isJumping", true);
+        //        isJump = true;
                 
-            }
+        //    }
             
-        }
+        //}
        
        
     }
